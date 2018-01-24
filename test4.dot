@@ -1,0 +1,4 @@
+strict graph {
+    "WF1 ${today}" -- { "WF2 (%tomorrow%)" "T1 now" "T2 now"};
+    "WF2 (%tomorrow%)" -- { "T1 now" [color=green] "t1 now" [color=red] "T3 tomorror" [color=blue] };
+}

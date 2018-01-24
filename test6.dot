@@ -1,0 +1,10 @@
+strict digraph {
+    "WF1 ${yesterday}" -> {}
+    "WF1 ${today}" -> "WF2 (%tomorrow%)" edge[label="Some Label" edgetooltip="Some extra info"];
+    "WF1 ${today}" -> "T1 now";
+    "WF1 ${today}" -> "T2 now";
+    "WF2 (%tomorrow%)" -> "T1 now";
+    "WF2 (%tomorrow%)" -> "t1 now" node[color=red] edge[color=blue];
+    "WF2 (%tomorrow%)" -> "T3 tomorror";
+    "Agenda:\nRed: something bad\nBlue: something unusual\nBlack: Ok" [margin=0 color=gray fontcolor=black fillcolor=gray fontsize=9 width=0.5 shape=rect style=filled]
+}

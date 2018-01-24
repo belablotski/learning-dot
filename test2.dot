@@ -1,0 +1,8 @@
+strict graph {
+    WF1 -- WF2;
+    WF1 -- T1;
+    WF1 -- T2;
+    WF2 -- T1;
+    WF2 -- t1 node[color=red] edge[color=blue];
+    WF2 -- T3;
+}
